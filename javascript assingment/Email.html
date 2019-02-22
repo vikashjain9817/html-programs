@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Check Addition even or odd.
+        </title>
+        
+        <style>
+            #num{
+                height: 18px;
+                width: 150px;
+                border-radius:5px 5px 5px 5px;
+                border-style:solid;
+                border-color: gray;
+            }
+            #b{
+                height: 18px;
+                width: 150px;
+                border-radius:5px 5px 5px 5px;
+                border-style:solid;
+                border-color: gray;
+            }
+            #next{
+                border: none;
+                background-color: #498af2;
+                color: white;
+                font-size: 20px;
+                border-radius: 5px 5px 5px 5px;
+            }
+            #next:hover{
+                border: none;
+                background-color: #498af2;
+                color: white;
+                font-size: 25px;
+                border-radius: 10px 5px 5px 10px;
+                
+            }
+            #div1{
+                position: relative;
+                background-color: #498af2;
+                width: 300px;
+                height: 250px;
+                margin-left: 560px;
+                padding-top: 80px;
+                padding-left: 30px;
+                backface-visibility: hidden;
+                border-radius:  10px 10px 10px 10px;
+            }
+            #div2{
+                position: absolute;
+                background-color: white;
+                width: 180px;
+                height: 150px;
+                padding-left: 25px;
+                padding-top: 50px;
+                margin-left: 30px;
+                margin-top: -20px;
+                border-radius:  10px 10px 10px 10px;
+                
+            }
+        </style>
+        <script type="text/javascript">
+                
+                function varify() {
+                    var pattern = /[A-Za-z]+[0-9A-Za-z]+[@]{1}[a-zA-Z]+[\.][com]/;
+                    var s = String(document.getElementById("num").value);
+                    var n = s.toString();
+                    alert(s);
+                    if(pattern.test(n)){
+                        alert("varified");
+                    }
+                    else
+                        alert("not varified");
+                    
+                }
+                
+        </script>
+        
+    </head>
+    
+    <body>
+           <u style="color: #498af2"><h1 align="center" style="color: #498af2;">Varify Email</h1></u>
+            <div id="div1">
+                <div id="div2">
+                <input type="text" name="a" id="num"  placeholder="Enter Email" required><br><br>
+                <input type="button" onclick="varify()" value= "varify" id = "next" style="margin-left: 40px;" >
+                </div>
+            </div>
+        
+    </body>
+</html>
